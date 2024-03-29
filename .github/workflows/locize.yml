@@ -1,0 +1,8 @@
+on: 
+ workflow_dispatch:
+ 
+name: locize download
+uses: locize/download@v1
+with:
+  project-id: ${{ secrets.LOCIZE_PROJECT_ID }}
+  api-key: e8c1f44a-db8d-471a-a1c7-edf788565fa9
