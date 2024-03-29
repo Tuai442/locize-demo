@@ -1,3 +1,7 @@
 uses: locize/download@v1
 with:
   project-id: ${{ secrets.LOCIZE_PROJECT_ID }}
+
+on:
+  repository_dispatch:
+    types: [locize/versionPublished]
