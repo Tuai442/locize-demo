@@ -1,3 +1,19 @@
-on:
-  repository_dispatch:
-    types: [locize/versionPublished]
+uses: locize/download@v1
+with:
+  project-id: ${{ secrets.LOCIZE_PROJECT_ID }}
+
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+    name: download and push
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Download translations
+        uses: locize/download@v1
+        with:
+          project-id: ${{ secrets.LOCIZE_PROJECT_ID }}
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.TOKEN }}
