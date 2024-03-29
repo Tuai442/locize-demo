@@ -1,4 +1,4 @@
-- name: locize download
+ name: locize download
   # You may pin to the exact commit or the version.
   # uses: locize/download@9e14b8bdba52e84268e5378738416dc97f4aa071
   uses: locize/download@v1
