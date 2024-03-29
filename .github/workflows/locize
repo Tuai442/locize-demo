@@ -1,0 +1,26 @@
+uses: locize/download@v1
+with:
+  # The project-id that should be used
+  project-id: 
+  # Specify the path that should be used (default: locales)
+  path: # optional, default is locales
+  # The version that should be targeted (default: latest)
+  version: # optional, default is latest
+  # File format of namespaces (default: json; [flat, xliff2, xliff12, xlf2, xlf12, android, yaml, yaml-rails, yaml-nested, csv, xlsx, po, strings, resx, fluent, tmx, laravel, properties])
+  format: # optional, default is json
+  # The language that should be targeted
+  language: # optional
+  # The namespace that should be targeted
+  namespace: # optional
+  # Skips to download empty files (default: true)
+  skip-empty: # optional
+  # This will be added as a local folder name prefix in front of the language.
+  language-folder-prefix: # optional
+  # This will define the folder and file structure; do not add a file extension (default: {{language}}/{{namespace}})
+  path-mask: # optional
+  # Removes all local files by removing the whole folder (default: false)
+  clean: # optional
+  # Downloads the current (unpublished) translations. This will generate private download costs and also needs the api-key to be passed (default: false)
+  unpublished: # optional
+  # The api-key that should be used
+  api-key: # optional
