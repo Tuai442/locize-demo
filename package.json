@@ -20,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "downloadLocales": "locize download --project-id=748da9da-9ea6-4768-8ea6-ac2cb8d528a7 --ver=latest --clean=true --path=./public/locales",
+    "syncLocales": "locize sync --project-id=748da9da-9ea6-4768-8ea6-ac2cb8d528a7 --ver=latest --api-key=e8c1f44a-db8d-471a-a1c7-edf788565fa9    --path=./public/locales --dry=true"
   },
   "eslintConfig": {
     "extends": [
