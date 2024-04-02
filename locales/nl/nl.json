@@ -1,4 +1,6 @@
 {
-  "title": "NL titel 3",
+  "message": "bericht",
+  "test": "test",
+  "title": "titel",
   "warning": "waarschuwing"
 }
