@@ -17,6 +17,8 @@ jobs:
         uses: locize/download@v1
         with:
           project-id: ${{ secrets.LOCIZE_PROJECT_ID }}
+      - name: Pull changes from main
+        run: git pull origin main
       - name: Commit & Push changes
         uses: actions-js/push@master
         with:
